@@ -23,20 +23,20 @@ const App=()=> {
     setCountry(country);
   }
   
-  
   return (
     <div className="App">
       <div className="top-wrapper">
 
       </div>
       <div className="content-wrapper">
-        <div className="left-wrapper">
-          <Cards data={data}/>
-        </div>
         <div className="right-wrapper">
           <CountrySelector getCountryData={getCountryData}/>
           <Chart country={country} data={data}/>
-        </div>      
+        </div>
+        <div className="left-wrapper">
+          <Cards data={data}/>
+        </div>
+              
       </div>
     </div>
   );
