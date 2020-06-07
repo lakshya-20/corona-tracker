@@ -16,3 +16,13 @@
   float: right;
   text-align: center;
 }
+@media only screen and (max-width: 600px) {
+  .left-wrapper{
+    float: none;
+    width: 100%;
+  }
+  .right-wrapper{
+    float: none;
+    width: 100%;
+  }
+}
