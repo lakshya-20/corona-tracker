@@ -5,6 +5,7 @@ import {fetchData} from './api/index';
 import Cards from './components/cards/index'
 import CountrySelector from './components/countrySelector/index'
 import Chart from './components/chart/index'
+import Header from './components/header/index'
 
 const App=()=> {
   const [data,setData]=useState({})
@@ -26,7 +27,7 @@ const App=()=> {
   return (
     <div className="App">
       <div className="top-wrapper">
-
+        <Header/>
       </div>
       <div className="content-wrapper">
         <div className="right-wrapper">

@@ -1,0 +1,15 @@
+.header-container{
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.heading{
+    font-size: 500%;
+    color: #737373;
+    font-weight: bolder;
+}
+.heading spam{
+    color: #e60000;
+}
