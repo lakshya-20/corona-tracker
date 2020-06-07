@@ -4,7 +4,7 @@ import {fetchCountries} from '../../api/index'
 
 import './styleSheet.css'
 
-const CountrySelector=()=>{
+const CountrySelector=({getCountryData})=>{
     const [countries,setCountries]=useState([])
     useEffect(()=>{
         const getData=async ()=>{
@@ -16,8 +16,8 @@ const CountrySelector=()=>{
     return(
         <div>
             <FormControl className="formControl">
-                <NativeSelect>
-                    <option>Global</option>
+                <NativeSelect defaultValue="" onChange={(event)=>{getCountryData(event.target.value)}}>
+                    <option value="">Global</option>
                     {countries.map((country, i) => <option key={i} value={country}>{country}</option>)}
                 </NativeSelect>
             </FormControl>

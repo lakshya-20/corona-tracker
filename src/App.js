@@ -16,8 +16,8 @@ const App=()=> {
     getData()
   },[])
   
-  const getCountryData=(country)=>{
-    const data=fetchData(country)
+  const getCountryData= async (country)=>{
+    const data=await fetchData(country)
     setData(data);
     setCountry(country);
   }
@@ -33,7 +33,7 @@ const App=()=> {
           <Cards data={data}/>
         </div>
         <div className="right-wrapper">
-          <CountrySelector/>
+          <CountrySelector getCountryData={getCountryData}/>
         </div>      
       </div>
     </div>
