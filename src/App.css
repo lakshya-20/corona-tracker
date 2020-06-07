@@ -9,14 +9,10 @@
 .left-wrapper{
   width: 30%;
   float: left;
-  background-color: antiquewhite;
-  height: 100%;
 }
 
 .right-wrapper{
   width:70%;
   float: right;
-  background-color: aqua;
-  height: 100%;
   text-align: center;
 }

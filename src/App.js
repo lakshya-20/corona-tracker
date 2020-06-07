@@ -4,6 +4,7 @@ import './App.css';
 import {fetchData} from './api/index';
 import Cards from './components/cards/index'
 import CountrySelector from './components/countrySelector/index'
+import Chart from './components/chart/index'
 
 const App=()=> {
   const [data,setData]=useState({})
@@ -34,6 +35,7 @@ const App=()=> {
         </div>
         <div className="right-wrapper">
           <CountrySelector getCountryData={getCountryData}/>
+          <Chart country={country} data={data}/>
         </div>      
       </div>
     </div>
