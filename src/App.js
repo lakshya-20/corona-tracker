@@ -3,6 +3,7 @@ import './App.css';
 
 import {fetchData} from './api/index';
 import Cards from './components/cards/index'
+import CountrySelector from './components/countrySelector/index'
 
 const App=()=> {
   const [data,setData]=useState({})
@@ -32,7 +33,7 @@ const App=()=> {
           <Cards data={data}/>
         </div>
         <div className="right-wrapper">
-          Right Wrapper
+          <CountrySelector/>
         </div>      
       </div>
     </div>
